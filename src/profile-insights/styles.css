@@ -25,9 +25,11 @@ body {
 }
 
 #upper-container {
-  width: 30em;
+  width: 40em;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
 }
 
 #short-profile {
@@ -61,5 +63,48 @@ button {
   font-weight: 600;
   border: none;
   cursor: pointer;
-  /* padding: 2em; */
+  height: 3.5em;
+  width: 22em;
+}
+
+#lower-container {
+  border-top: 0.063em solid #939794;
+  padding-top: 1em;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 0.9em;
+  display: flex;
+}
+
+li:first-child {
+  font-weight: 700;
+}
+
+li {
+  margin-right: 1em;
+}
+
+#insights {
+  margin-top: 2em;
+}
+
+#insights > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#insights h2 {
+  font-size: 1em;
+}
+
+#date-container {
+  display: flex;
+  align-items: center;
+}
+
+#down-arrow {
+  padding-top: 0.313em;
 }
