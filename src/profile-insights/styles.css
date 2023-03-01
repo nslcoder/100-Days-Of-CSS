@@ -22,10 +22,11 @@ body {
 #insights-page {
   background-color: #fff;
   padding: 2em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #upper-container {
-  width: 40em;
+  width: 50em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,4 +108,55 @@ li {
 
 #down-arrow {
   padding-top: 0.313em;
+}
+
+#insights-card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.insights-card {
+  flex-basis: 0;
+  flex-grow: 1;
+  border-radius: 0.4em;
+  padding: 1em;
+}
+
+.insights-card:first-child {
+  background-color: #2f3030;
+  color: #fff;
+}
+
+.insights-card:not(:first-child) {
+  border: 0.063em solid #939794;
+  margin-left: 1em;
+}
+
+h3 {
+  font-size: 0.9em;
+}
+
+.upper-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.growth-rate {
+  display: flex;
+  align-items: center;
+}
+
+.growth-rate > span:first-child {
+  padding-top: 0.3em;
+}
+
+.current-number {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.lower-part {
+  margin-top: 0.5em;
 }
