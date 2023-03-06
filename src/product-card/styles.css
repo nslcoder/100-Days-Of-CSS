@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  background-color: #ebf3fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+#product-container {
+  width: 40em;
+  background-color: #fff;
+  padding: 2em;
+  display: flex;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#img-container {
+  width: 40%;
+}
+
+img {
+  width: 100%;
+}
+
+#product-info {
+  width: 60%;
+}
+
+#offer {
+  background-color: #210e4b;
+  color: #fff;
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  border-radius: 5em;
+  font-size: 0.9em;
+}
+
+#title {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#prices {
+  margin: 1.2em 0;
+}
+
+#old-price {
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+#current-price {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+small {
+  color: #90919b;
+}
+
+#main-btn {
+  display: inline-block;
+  width: 100%;
+  background-color: #3b66b8;
+  border: none;
+  border-radius: 0.5em;
+  color: #fff;
+  height: 3em;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+#in-stock {
+  margin: 1em 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+#in-stock > span {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: #17fc67;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+#add-btns {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-btn {
+  width: 45%;
+  height: 3em;
+  font-weight: 600;
+  background-color: transparent;
+  border: 2px solid #90919b;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
