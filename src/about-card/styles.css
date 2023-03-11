@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  font-family: "Inter", sans-serif;
+  background-color: #ccbdb7;
+  color: #201817;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  background-color: #f9f5f2;
+  padding: 2em;
+  border-radius: 1.5em;
+  width: 22em;
+}
+
+#top-part {
+  font-size: 0.9em;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+#about {
+  margin: 0.5em 0 1.5em 0;
+}
+
+#stats {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+
+.stats-item:first-child {
+  margin-right: 2em;
+}
+
+.stats-item > span {
+  display: block;
+}
+
+.stats-item > span:first-child {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+button {
+  background-color: transparent;
+  border: 0.063em solid #201817;
+  border-radius: 0.5em;
+  padding: 1em;
+  font-size: 1em;
+  width: 47%;
+  cursor: pointer;
+}
+
+button:nth-child(2) {
+  background-color: #201817;
+  color: #fff;
+}
+
+#created-at {
+  font-size: 0.9em;
+}
