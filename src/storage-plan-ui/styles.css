@@ -40,9 +40,14 @@ body {
   margin-right: 0.5em;
 }
 
+#storage-stats {
+  display: flex;
+  align-items: center;
+}
+
 #outer-circle {
-  height: 6em;
-  width: 6em;
+  height: 12em;
+  width: 12em;
   border-radius: 50%;
   border: 0.063em solid #fff;
   position: relative;
@@ -52,9 +57,38 @@ body {
 }
 
 #inner-circle {
-  height: 5em;
-  width: 5em;
+  height: 11em;
+  width: 11em;
   position: absolute;
   border-radius: 50%;
-  background-color: #a0cce2;
+  background-image: repeating-conic-gradient(
+    #424fc0 0deg 35deg,
+    #a0cce2 35deg 360deg
+  );
+}
+
+#storage-details {
+  padding-left: 1em;
+  font-weight: 600;
+}
+
+#full {
+  margin-bottom: 1em;
+}
+
+#used {
+  margin-bottom: 1em;
+  color: #424fc0;
+}
+
+.size-info {
+  font-size: 0.875em;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.7em 1em;
 }
