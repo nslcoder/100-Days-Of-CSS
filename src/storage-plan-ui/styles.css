@@ -28,6 +28,19 @@ body {
   background-color: #ebebeb;
   padding: 1.5em;
   border-radius: 0.7em;
+  position: relative;
+}
+
+#total-storage::after {
+  content: "";
+  position: absolute;
+  background-color: #cfd1d3;
+  border: 1px solid #fff;
+  border-radius: 0.7em;
+  height: 19em;
+  width: 19em;
+  bottom: 0;
+  z-index: -1;
 }
 
 #storage-title {
@@ -106,21 +119,31 @@ button {
 }
 
 #plans::after {
-  content: "";
+  content: "Plans";
   position: absolute;
+  background-color: #cfd1d3;
   border: 1px solid #fff;
   border-radius: 0.8em;
-  height: 25em;
-  width: 16em;
+  height: 23em;
+  width: 14em;
   left: 1em;
   bottom: 1em;
   top: -3em;
+  z-index: -1;
+  padding: 1em;
+  font-weight: 700;
 }
 
 .plan {
   border-radius: 0.8em;
   margin-bottom: 0.7em;
   padding: 1.5em;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-size {
+  z-index: 10;
 }
 
 .title-line {
@@ -143,6 +166,59 @@ button {
 .small > p {
   font-weight: 600;
   margin-top: 0.5em;
+}
+
+.curve {
+  position: absolute;
+  border: 0.125em solid #967451;
+  border-radius: 25% 0;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+.curve-one {
+  height: 5em;
+  width: 5em;
+  top: 6em;
+}
+
+.curve-two {
+  height: 8em;
+  width: 8em;
+  top: 5em;
+}
+
+.curve-three {
+  height: 11em;
+  width: 11em;
+  top: 4em;
+}
+
+.right-curve-one {
+  left: 14em;
+}
+
+.right-curve-two {
+  left: 12.5em;
+}
+
+.right-curve-three {
+  left: 11em;
+}
+
+.left-curve-one {
+  right: 14em;
+  border: 0.125em solid #fff;
+}
+
+.left-curve-two {
+  right: 12.5em;
+  border: 0.125em solid #fff;
+}
+
+.left-curve-three {
+  right: 11em;
+  border: 0.125em solid #fff;
 }
 
 .medium,
