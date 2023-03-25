@@ -35,3 +35,53 @@ body {
 #sidenav > ul > li:hover {
   background-color: #e15601;
 }
+
+#timesheet-container {
+  padding: 2em;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 5em;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+}
+
+#search > input {
+  border: none;
+  background-color: transparent;
+  padding: 0.2em;
+  margin-left: 0.2em;
+}
+
+#profile-info {
+  display: flex;
+  align-items: center;
+}
+
+#bell {
+  margin-right: 1em;
+}
+
+#profile-options {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+
+#profile-picture {
+  border-radius: 50%;
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+#triangle {
+  margin-left: 0.5em;
+  transform: rotate(180deg);
+  font-size: 0.5em;
+}
