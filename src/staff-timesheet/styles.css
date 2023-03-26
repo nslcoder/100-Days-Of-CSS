@@ -6,10 +6,6 @@
   margin: 0;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   height: inherit;
   background-color: #f0f0f0;
@@ -19,11 +15,19 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+#timesheet-container {
+  background-color: #fff;
+  display: flex;
+}
+
+#timesheet-container > div:nth-child(2) {
+  padding: 1em 2em;
+}
+
 #sidenav {
   background-color: #f44b21;
   color: #fff;
   padding: 3em 0;
-  height: 100%;
 }
 
 #sidenav > ul > li {
@@ -36,14 +40,10 @@ body {
   background-color: #e15601;
 }
 
-#timesheet-container {
-  padding: 2em;
-  background-color: #fff;
-}
-
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 5em;
 }
 
@@ -84,4 +84,36 @@ header {
   margin-left: 0.5em;
   transform: rotate(180deg);
   font-size: 0.5em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border-bottom: 0.06em solid #9b9593;
+  padding: 1em;
+}
+
+tr:first-child > th {
+  text-align: center;
+}
+
+tr:first-child > th > span {
+  display: block;
+}
+
+tr:first-child > th > span:nth-child(2) {
+  color: #9b9593;
+  font-weight: 400;
+}
+
+tr > th {
+  text-align: left;
+}
+
+tr:not(#first-row) > th:not(#blank-cell) {
+  display: flex;
+  align-items: center;
 }

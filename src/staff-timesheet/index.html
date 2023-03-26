@@ -8,98 +8,314 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="sidenav">
-      <ul>
-        <li>Projects</li>
-        <li>Employees</li>
-        <li>Assigned Projects</li>
-        <li>Reports</li>
-        <li>In Review</li>
-        <li>Payments</li>
-        <li>Settings</li>
-        <li>Support</li>
-      </ul>
-    </div>
     <div id="timesheet-container">
-      <header>
-        <div id="search">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <input type="text" placeholder="Search for something" />
-        </div>
-        <div id="profile-info">
-          <svg
-            id="bell"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-          </svg>
-          <svg
-            id="inbox"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-          </svg>
-          <div id="profile-options">
-            <img
-              src="images/profile-picture.jpg"
-              alt="profile picture"
-              id="profile-picture"
-            />
-            <span>Diana R Anderson</span>
+      <div id="sidenav">
+        <ul>
+          <li>Projects</li>
+          <li>Employees</li>
+          <li>Assigned Projects</li>
+          <li>Reports</li>
+          <li>In Review</li>
+          <li>Payments</li>
+          <li>Settings</li>
+          <li>Support</li>
+        </ul>
+      </div>
+      <div>
+        <header>
+          <div id="search">
             <svg
-              id="triangle"
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
-              fill="grey"
-              stroke="none"
+              fill="none"
+              stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path
-                d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"
-              ></path>
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
+            <input type="text" placeholder="Search for something" />
           </div>
+          <div id="profile-info">
+            <svg
+              id="bell"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+            <svg
+              id="inbox"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <div id="profile-options">
+              <img
+                src="images/profile-picture.jpg"
+                alt="profile picture"
+                id="profile-picture"
+              />
+              <span>Diana R Anderson</span>
+              <svg
+                id="triangle"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="grey"
+                stroke="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </header>
+        <div id="timesheet">
+          <div id="week-title">Timesheet Week 41</div>
+          <div id="date-track"></div>
+          <table>
+            <tr id="first-row">
+              <th id="blank-cell"></th>
+              <th><span>Mon</span><span>Sep 19</span></th>
+              <th><span>Tue</span><span>Sep 20</span></th>
+              <th><span>Wed</span><span>Sep 21</span></th>
+              <th><span>Thurs</span><span>Sep 22</span></th>
+              <th><span>Fri</span><span>Sep 23</span></th>
+              <th><span>Sat</span><span>Sep 24</span></th>
+              <th><span>Sun</span><span>Sep 25</span></th>
+              <th>Hours</th>
+              <th>Rate</th>
+              <th>Amount</th>
+            </tr>
+            <tr>
+              <th>
+                <img
+                  src="images/profile-picture.jpg"
+                  alt="profile picture"
+                  id="profile-picture"
+                />
+                <span>Eugene Luna</span>
+              </th>
+              <td>6:30</td>
+              <td>8:00</td>
+              <td>-</td>
+              <td>-</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>14:30</td>
+              <td>$18/h</td>
+              <td>$252</td>
+            </tr>
+            <tr>
+              <th>
+                <img
+                  src="images/profile-picture.jpg"
+                  alt="profile picture"
+                  id="profile-picture"
+                />
+                <span>Sally Taylor</span>
+              </th>
+              <td>6:30</td>
+              <td>8:00</td>
+              <td>-</td>
+              <td>8:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>22:30</td>
+              <td>$15/h</td>
+              <td>$330</td>
+            </tr>
+            <tr>
+              <th>
+                <img
+                  src="images/profile-picture.jpg"
+                  alt="profile picture"
+                  id="profile-picture"
+                />
+                <span>Elias Thomas</span>
+              </th>
+              <td>-</td>
+              <td>8:00</td>
+              <td>2:30</td>
+              <td>-</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>10:30</td>
+              <td>$22/h</td>
+              <td>$220</td>
+            </tr>
+            <tr>
+              <th>
+                <img
+                  src="images/profile-picture.jpg"
+                  alt="profile picture"
+                  id="profile-picture"
+                />
+                <span>Myron Murphy</span>
+              </th>
+              <td>6:30</td>
+              <td>8:00</td>
+              <td>8:00</td>
+              <td>6:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>28:30</td>
+              <td>$20/h</td>
+              <td>$220</td>
+            </tr>
+            <tr>
+              <th>
+                <img
+                  src="images/profile-picture.jpg"
+                  alt="profile picture"
+                  id="profile-picture"
+                />
+                <span>Eddie Albanese</span>
+              </th>
+              <td>-</td>
+              <td>8:00</td>
+              <td>-</td>
+              <td>-</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>8:00</td>
+              <td>$15/h</td>
+              <td>$120</td>
+            </tr>
+            <tr>
+              <th>
+                <img
+                  src="images/profile-picture.jpg"
+                  alt="profile picture"
+                  id="profile-picture"
+                />
+                <span>Carmen Cammarata</span>
+              </th>
+              <td>7:00</td>
+              <td>8:00</td>
+              <td>7:00</td>
+              <td>7:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>29:30</td>
+              <td>$25/h</td>
+              <td>$$$</td>
+            </tr>
+            <tr>
+              <th>
+                <img
+                  src="images/profile-picture.jpg"
+                  alt="profile picture"
+                  id="profile-picture"
+                />
+                <span>Thelma Bolan</span>
+              </th>
+              <td>6:30</td>
+              <td>9:00</td>
+              <td>5:00</td>
+              <td>5:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>26:00</td>
+              <td>$18/h</td>
+              <td>$725</td>
+            </tr>
+            <tr>
+              <th>
+                <img
+                  src="images/profile-picture.jpg"
+                  alt="profile picture"
+                  id="profile-picture"
+                />
+                <span>Patrick Fillion</span>
+              </th>
+              <td>6:30</td>
+              <td>-</td>
+              <td>7:00</td>
+              <td>-</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>13:30</td>
+              <td>$18/h</td>
+              <td>$234</td>
+            </tr>
+            <tr>
+              <th>
+                <img
+                  src="images/profile-picture.jpg"
+                  alt="profile picture"
+                  id="profile-picture"
+                />
+                <span>David Thomason</span>
+              </th>
+              <td>6:30</td>
+              <td>8:00</td>
+              <td>-</td>
+              <td>-</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>14:30</td>
+              <td>$19/h</td>
+              <td>$266</td>
+            </tr>
+            <tr>
+              <th>
+                <img
+                  src="images/profile-picture.jpg"
+                  alt="profile picture"
+                  id="profile-picture"
+                />
+                <span>Laura Hill</span>
+              </th>
+              <td>7:00</td>
+              <td>7:00</td>
+              <td>-</td>
+              <td>7:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>21:30</td>
+              <td>$15/h</td>
+              <td>$315</td>
+            </tr>
+          </table>
         </div>
-      </header>
-      <div id="timesheet">
-        <div id="week-title">Timesheet Week 41</div>
-        <div id="date-track"></div>
-        <table></table>
       </div>
     </div>
   </body>
