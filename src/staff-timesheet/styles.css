@@ -7,12 +7,12 @@
 }
 
 body {
-  height: inherit;
   background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Inter", sans-serif;
+  font-size: 0.95em;
 }
 
 #timesheet-container {
@@ -21,7 +21,7 @@ body {
 }
 
 #timesheet-container > div:nth-child(2) {
-  padding: 1em 2em;
+  padding: 1em 4.3em;
 }
 
 #sidenav {
@@ -94,6 +94,7 @@ td,
 th {
   border-bottom: 0.06em solid #9b9593;
   padding: 1em;
+  text-align: center;
 }
 
 tr:first-child > th {
@@ -116,4 +117,31 @@ tr > th {
 tr:not(#first-row) > th:not(#blank-cell) {
   display: flex;
   align-items: center;
+}
+
+tr > td:nth-child(6) {
+  background-color: #eefaeb;
+}
+
+tr > td:nth-child(7),
+td:nth-child(8) {
+  background-color: #fff4ef;
+}
+
+.dash-cell {
+  display: inline-block;
+  background-color: #f44b21;
+  height: 0.15em;
+  width: 0.3em;
+  border-radius: 1em;
+}
+
+#date-track {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+#date-track > span {
+  margin-right: 0.7em;
 }
