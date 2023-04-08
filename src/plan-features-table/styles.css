@@ -19,8 +19,9 @@ body {
   border-radius: 0.4em;
   background-color: #fff;
   margin: 2em;
-  padding: 1em;
+  padding: 2em;
   box-shadow: 0 0 2px;
+  overflow-x: auto;
 }
 
 table {
@@ -35,6 +36,7 @@ td:first-child {
 
 td {
   padding: 0.5em;
+  text-align: center;
 }
 
 #plan-title {
@@ -47,15 +49,21 @@ td {
   font-size: 1.4em;
 }
 
-#mover-plan {
+#mover-plan,
+.mover-checkmark,
+.mover-subtitle-price {
   color: #25aad3;
 }
 
-#shaker-plan {
+#shaker-plan,
+.shaker-checkmark,
+.shaker-subtitle-price {
   color: #4221b8;
 }
 
-#earthquaker-plan {
+#earthquaker-plan,
+.earthquaker-checkmark,
+.earthquaker-subtitle-price {
   color: #ce9825;
 }
 
