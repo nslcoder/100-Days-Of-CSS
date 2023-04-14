@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  background-color: #faf2f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+#list-container {
+  background-color: #121129;
+  border-radius: 0.6em;
+  padding: 1.5em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+#area-setting {
+  display: flex;
+  align-items: center;
+  margin: 1em 0 1.5em 0;
+}
+
+#area-setting > input {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #adaaec;
+  border-radius: 0.2em;
+  width: 7em;
+  padding: 0.4em;
+  font-size: inherit;
+  color: #fff;
+  font-family: inherit;
+}
+
+#my-location {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5em;
+}
+
+#use-location {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #8e8ad4;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.store {
+  margin: 1em 0;
+  cursor: pointer;
+  padding: 0.5em;
+  transition: background-color 0.5s;
+}
+
+.store:hover {
+  background-color: #8e8ad4;
+}
+
+h3 {
+  font-size: inherit;
+}
+
+address {
+  font-style: normal;
+  margin: 0.3em 0;
+}
+
+.open-time {
+  display: flex;
+  align-items: center;
+}
+
+.open-time > span {
+  margin-left: 0.3em;
+}
+
+#view-all {
+  width: 100%;
+  background-color: #8e8ad4;
+  border: none;
+  border-radius: 0.2em;
+  padding: 0.5em;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
