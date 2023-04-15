@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  background-color: #0a0b0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.cards {
+  display: flex;
+  border: 1px solid grey;
+  position: relative;
+  animation: move-across 5s linear infinite;
+}
+
+.card {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #fff;
+  margin: 0.25em;
+  font-size: 1.5em;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:first-child {
+  animation: move-across-first 5s linear delay iteration-count direction
+    fill-mode;
+}
+
+@keyframes move-across {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 250px;
+  }
+}
