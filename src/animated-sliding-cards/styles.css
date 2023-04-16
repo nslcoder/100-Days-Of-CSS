@@ -21,34 +21,61 @@ body {
 }
 
 .cards {
+  width: 500px;
+  height: 134px;
   display: flex;
-  border: 1px solid grey;
+  align-items: center;
   position: relative;
-  animation: move-across 5s linear infinite;
 }
 
 .card {
   width: 120px;
   height: 120px;
   border: 1px solid #fff;
-  margin: 0.25em;
   font-size: 1.5em;
   font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 
-.card:first-child {
-  animation: move-across-first 5s linear delay iteration-count direction
-    fill-mode;
+.card:nth-child(1) {
+  animation: slide-across 20s -0.2s linear infinite;
 }
 
-@keyframes move-across {
+.card:nth-child(2) {
+  animation: slide-across 20s -5.2s linear infinite;
+}
+
+.card:nth-child(3) {
+  animation: slide-across 20s -10.2s linear infinite;
+}
+
+.card:nth-child(4) {
+  animation: slide-across 20s -15.2s linear infinite;
+}
+
+@keyframes slide-across {
   0% {
     left: 0px;
   }
   100% {
-    left: 250px;
+    left: 500px;
   }
+}
+
+.overlay {
+  position: absolute;
+  height: 134px;
+  width: 200px;
+  background-color: #0a0b0d;
+}
+
+.left-overlay {
+  left: -50px;
+}
+
+.right-overlay {
+  right: -150px;
 }
