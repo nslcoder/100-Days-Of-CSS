@@ -22,13 +22,29 @@ body {
 
 #container {
   height: 430px;
-  width: 320px;
-  border-width: 1px 0;
-  border-color: #fff;
-  border-style: solid;
+  width: 430px;
   display: flex;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
+}
+
+#container::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 430px;
+  background-color: #0a0b0d;
+  z-index: 1;
+}
+
+#container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 430px;
+  background-color: #0a0b0d;
+  z-index: 1;
 }
 
 .cards {
@@ -57,25 +73,45 @@ body {
   left: 220px;
 }
 
-.first-lane > .card-one {
-  animation: slide-down 20s linear infinite;
+.fourth-lane {
+  left: 330px;
 }
 
-.first-lane > .card-two {
-  animation: slide-down 20s linear -5.11s infinite;
+.down-lane > .card-one {
+  animation: slide 20s linear infinite;
 }
 
-.first-lane > .card-three {
-  animation: slide-down 20s linear -10.22s infinite;
+.down-lane > .card-two {
+  animation: slide 20s linear -5s infinite;
 }
 
-.first-lane > .card-four {
-  animation: slide-down 20s linear -15.33s infinite;
+.down-lane > .card-three {
+  animation: slide 20s linear -10s infinite;
 }
 
-@keyframes slide-down {
+.down-lane > .card-four {
+  animation: slide 20s linear -15s infinite;
+}
+
+.up-lane > .card-one {
+  animation: slide 20s linear infinite reverse;
+}
+
+.up-lane > .card-two {
+  animation: slide 20s linear -5s infinite reverse;
+}
+
+.up-lane > .card-three {
+  animation: slide 20s linear -10s infinite reverse;
+}
+
+.up-lane > .card-four {
+  animation: slide 20s linear -15s infinite reverse;
+}
+
+@keyframes slide {
   0% {
-    top: -50px;
+    top: 0px;
   }
   100% {
     top: 430px;
