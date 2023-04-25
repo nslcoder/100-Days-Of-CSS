@@ -20,45 +20,92 @@ body {
   color: #fff;
 }
 
-.outer-spinner {
-  width: 200px;
-  height: 200px;
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit {
   border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.outer-orbit {
+  width: 300px;
+  height: 300px;
+}
+
+.outer-spinner {
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   position: relative;
   animation: spin 7s linear infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .outer-spinner::after {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
-  left: -9px;
-  background-color: #66e93e;
+  width: 20px;
+  height: 20px;
+  background-color: #44f0e7;
   border-radius: 50%;
+  left: -10px;
+  top: 140px;
+}
+
+.middle-orbit {
+  width: 200px;
+  height: 200px;
+}
+
+.middle-spinner {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  animation: spin 10s linear infinite;
+}
+
+.middle-spinner::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #4fff1a;
+  border-radius: 50%;
+  left: -10px;
+  top: 90px;
+}
+
+.inner-orbit {
+  width: 100px;
+  height: 100px;
 }
 
 .inner-spinner {
   width: 100px;
   height: 100px;
-  border: 1px solid #fff;
   border-radius: 50%;
   position: relative;
-  animation: spin 5s linear infinite;
+  animation: spin 4s linear infinite;
 }
 
 .inner-spinner::after {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 15px;
-  background-color: #66e93e;
+  width: 20px;
+  height: 20px;
+  background-color: #fd1e1e;
   border-radius: 50%;
+  left: -10px;
+  top: 40px;
 }
 
 @keyframes spin {
