@@ -17,7 +17,6 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Inter", sans-serif;
-  color: #fff;
 }
 
 #products-list {
@@ -30,9 +29,40 @@ body {
   margin: 5px;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
 }
 
 img {
   width: 100%;
-  height: auto;
+}
+
+.product-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.1em;
+  margin: 0 0 0.5em 0.5em;
+  padding: 0.5em;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.product-price {
+  position: absolute;
+  top: 0;
+  right: -79px;
+  background-color: #3eff95;
+  font-size: 1.1em;
+  margin: 0.5em 0.5em 0 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s;
+}
+
+.product:hover > .product-price {
+  transform: translateX(-79px);
 }
