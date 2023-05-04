@@ -18,14 +18,15 @@ body {
   align-items: center;
   font-family: "Inter", sans-serif;
   color: #202020;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 #delivery-container {
   background-color: #fff;
   border-radius: 1.1em;
   padding: 2em;
-  width: 25em;
+  width: 30em;
+  box-shadow: 0 0 25px #d8d7d7;
 }
 
 #details-title {
@@ -47,4 +48,57 @@ body {
   color: #767ed8;
   font-weight: 600;
   margin-bottom: 0.5em;
+}
+
+#timeline-container {
+  margin-top: 2em;
+  border-left: 2px solid #8487a8;
+  padding-left: 1.5em;
+}
+
+.delivery-point {
+  margin-bottom: 1.2em;
+  position: relative;
+}
+
+.marker {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #f4f4f4;
+  border: 1px solid #767ed8;
+  border-radius: 50%;
+  left: -31px;
+}
+
+.arrived-marker {
+  background-color: #767ed8;
+}
+
+.delivery-point > p {
+  font-weight: 600;
+  color: #414040;
+  margin-bottom: 0.5em;
+}
+
+.datetime {
+  font-size: 12px;
+  color: #767ed8;
+}
+
+.days-to {
+  position: absolute;
+  top: 36.6px;
+  padding: 0.7em;
+  background-color: #767ed8;
+  color: #fff;
+  border-radius: 0.4em;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.marker:hover ~ .days-to {
+  opacity: 1;
+  transform: translateY(-36.6px);
 }
