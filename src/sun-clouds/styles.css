@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background-color: rgb(112, 134, 134);
+}
+
+.container {
+  position: relative;
+}
+
+#sun {
+  height: 250px;
+  width: 250px;
+  background-color: #d6cd45;
+  border-radius: 50%;
+  animation: color-change 20s linear infinite;
+}
+
+.clouds {
+  position: absolute;
+  bottom: 0;
+  animation: move-across 20s linear infinite;
+}
+
+.cloud {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.cloud:first-child {
+  height: 120px;
+  width: 120px;
+}
+
+.cloud:nth-child(2) {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  bottom: 0;
+  right: -25px;
+}
+
+.cloud:nth-child(3) {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 20px;
+  left: -20px;
+}
+
+@keyframes move-across {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #ec922c;
+  }
+  25% {
+    background-color: #d6cd45;
+  }
+  75% {
+    background-color: #e6d545;
+  }
+  100% {
+    background-color: #ec922c;
+  }
+}
