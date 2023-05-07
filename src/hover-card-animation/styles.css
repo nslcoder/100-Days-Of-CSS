@@ -24,7 +24,7 @@ body {
 .container {
   background-color: #202020;
   display: flex;
-  /* width: 750px; */
+  width: 750px;
 }
 
 .card {
@@ -39,9 +39,57 @@ body {
 
 .card > p {
   margin-bottom: 6em;
-  width: 200px;
+  width: 150px;
 }
 
 .card:hover {
-  width: 300px;
+  width: 350px;
+}
+
+.btn-container {
+  background-color: #202020;
+  width: 38.6px;
+  height: 38.6px;
+  padding: 0.5em 1em;
+  color: #f4f4f4;
+  border-radius: 25px;
+  position: relative;
+  transition: width 1s;
+}
+
+.btn-container > span {
+  position: absolute;
+  width: 95px;
+}
+
+button {
+  position: absolute;
+  height: 38.6px;
+  width: 38.6px;
+  border-radius: 50%;
+  border: none;
+  background-color: #202020;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+}
+
+.card:hover > .btn-container {
+  width: 150px;
+}
+
+.card:hover button {
+  transform: translateX(120px);
 }
