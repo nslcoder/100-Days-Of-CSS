@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: #202020;
+  font-size: 1.1em;
+}
+
+.container {
+  max-width: 50em;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5em;
+}
+
+.event-card {
+  padding: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.event-card:nth-child(odd) {
+  background-color: #544bab;
+  color: #eaecf9;
+}
+
+.event-card:nth-child(even) {
+  background-color: #eaecf9;
+  color: #544bab;
+}
+
+.day {
+  display: block;
+  font-size: 1.7em;
+  font-weight: 700;
+  margin: 0.2em 0 0.7em 0;
+}
+
+.event-description {
+  margin-bottom: 1em;
+}
+
+.mode {
+  display: block;
+}
+
+.time-period,
+.mode {
+  font-size: 0.7em;
+}
+
+.lucide-arrow-right {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+#more-btn {
+  width: 100%;
+  border: none;
+  padding: 2em;
+  margin-top: 1em;
+  background-color: #544bab;
+  color: #eaecf9;
+  font-family: inherit;
+  font-size: 1.1em;
+  cursor: pointer;
+}
