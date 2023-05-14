@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #202020;
+  font-size: 1.1em;
+}
+
+.container {
+  margin: 80px;
+  position: relative;
+}
+
+.circle {
+  border: 1px dotted black;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.square {
+  border: 1px dotted black;
+  height: 80px;
+  width: 80px;
+}
+
+.transformer {
+  height: 80px;
+  width: 80px;
+  background-color: rgb(55, 216, 55);
+  position: absolute;
+  bottom: 0;
+  animation: move-up 1s linear forwards, change-shape 0.5s linear 0.5s forwards;
+}
+
+@keyframes move-up {
+  100% {
+    transform: translateY(-130px);
+  }
+}
+
+@keyframes change-shape {
+  100% {
+    border-radius: 50%;
+  }
+}
