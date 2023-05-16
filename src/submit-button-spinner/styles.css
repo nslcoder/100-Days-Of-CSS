@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: #202020;
+  font-size: 1.1em;
+}
+
+form {
+  padding: 1em;
+  border-radius: 0.3em;
+  background-color: #fff;
+  box-shadow: 0 0 9px #dbdada;
+}
+
+form > * {
+  display: block;
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.5em;
+}
+
+input {
+  background-color: #f4f4f4;
+}
+
+input[type="password"] {
+  margin: 0.5em 0;
+}
+
+button {
+  margin-top: 1em;
+  background-color: #4a7bff;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+}
