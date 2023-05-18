@@ -21,14 +21,14 @@ body {
   font-size: 1.1em;
 }
 
-form {
+#form {
   padding: 1em;
   border-radius: 0.3em;
   background-color: #fff;
   box-shadow: 0 0 9px #dbdada;
 }
 
-form > * {
+#form > input {
   display: block;
   font-size: inherit;
   font-family: inherit;
@@ -45,10 +45,51 @@ input[type="password"] {
   margin: 0.5em 0;
 }
 
+button,
+#spinner-box {
+  display: block;
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.5em;
+  background-color: #4a7bff;
+  width: 100%;
+}
+
+#button-box {
+  position: relative;
+}
+
 button {
   margin-top: 1em;
-  background-color: #4a7bff;
   color: #fff;
-  width: 100%;
   cursor: pointer;
+}
+
+#spinner-box {
+  height: 38.6px;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+#spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #a3b5e6;
+  border-top: 2px solid #fff;
+  border-radius: 50%;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+button:focus ~ #spinner-box {
+  display: block;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }
