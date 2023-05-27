@@ -16,5 +16,39 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-family: "Inter", sans-serif;
+  padding: 30px;
+}
+
+#shoes-collection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px 20px;
+}
+
+.shoe-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.shoe-image {
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.shoe-name {
+  font-weight: 600;
+}
+
+.shoe-materials {
+  color: #bdbdbd;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.shoe-price {
+  margin-top: 0.5em;
+  font-size: 1.1em;
 }
