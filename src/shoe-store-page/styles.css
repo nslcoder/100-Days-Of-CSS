@@ -21,9 +21,40 @@ body {
   padding: 30px;
 }
 
+header {
+  width: 100%;
+}
+
+nav > a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 30px;
+  font-weight: 600;
+}
+
+#filter-view-sort-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 1.5em;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #bdbdbd;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+#view-options > * {
+  cursor: pointer;
+}
+
 #shoes-collection {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 25px 20px;
 }
 
@@ -51,4 +82,16 @@ body {
 .shoe-price {
   margin-top: 0.5em;
   font-size: 1.1em;
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  #shoes-collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  #shoes-collection {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
